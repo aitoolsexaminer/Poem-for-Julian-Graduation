@@ -4,85 +4,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poem for Julian Graduation</title>
+  <meta name="theme-color" content="#000000">
+
+  <title>Video</title>
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      background: #111827;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
+    html, body {
       width: 100%;
-      max-width: 850px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: clamp(26px, 5vw, 42px);
-      margin-bottom: 12px;
-    }
-
-    p {
-      color: #cbd5e1;
-      margin-bottom: 28px;
-      font-size: 16px;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
     }
 
     .video-wrapper {
-      position: relative;
+      position: fixed;
+      inset: 0;
       width: 100%;
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-      border-radius: 14px;
+      height: 100%;
       background: #000;
-      box-shadow: 0 15px 45px rgba(0,0,0,.4);
     }
 
     iframe {
+      display: block;
       width: 100%;
       height: 100%;
-      border: 0;
-    }
-
-    .footer {
-      margin-top: 25px;
-      color: #94a3b8;
-      font-size: 13px;
+      border: none;
     }
   </style>
 </head>
 
 <body>
-  <main class="container">
 
-    <h1>A Special Moment</h1>
-    <p>Scan, watch, and enjoy!</p>
+  <div class="video-wrapper">
+    <iframe
+      src="https://drive.google.com/file/d/1Y4t8NE-k83FpASgyD0IfxWMJsfPS6Jeg/preview"
+      allow="autoplay; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
 
-    <div class="video-wrapper">
-      <iframe
-        src="https://drive.google.com/file/d/1Y4t8NE-k83FpASgyD0IfxWMJsfPS6Jeg/preview"
-        allow="autoplay"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <div class="footer">
-      Made with love ❤️
-    </div>
-
-  </main>
 </body>
 </html>
